@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Grid layout</title>
+    
+    <style>
+.items{
+    border: 1px solid blue;
+    color: red;
+   
+    
+}
+.container{
+    display: grid;
+    /* grid-template-columns: 200px 50px 100px; */
+    /* grid-template-columns: repeat(3,100px) 300px;
+     */
+     /* grid-template-columns: repeat(2,100px)300px 50px; */
+     /* grid-template-columns: repeat(3,2fr);
+      */
+      grid-template-columns: 100px auto 100px;
+      justify-content: center;
+}
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="items">Item-1</div>
+    <div class="items">Item-2</div>
+    <div class="items">Item-3</div>
+    <div class="items">Item-4</div>
+    <div class="items">Item-5</div>
+    <div class="items">Item-6</div>
+    <div class="items">Item-7</div>
+    <div class="items">Item-8</div>
+    <div class="items">Item-9</div>
+    <div class="items">Item-10</div>
+    <div class="items">Item-11</div>
+    <div class="items">Item-1</div>
+    <div class="items">Item-2</div>
+    <div class="items">Item-3</div>
+    <div class="items">Item-4</div>
+    <div class="items">Item-5</div>
+    <div class="items">Item-6</div>
+    <div class="items">Item-7</div>
+    <div class="items">Item-8</div>
+    <div class="items">Item-9</div>
+    <div class="items">Item-10</div>
+    <div class="items">Item-11</div>
+   </div>
+</body>
+</html>
