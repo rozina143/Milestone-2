@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webside</title>
+    <style>
+        body{
+         border: 2px solid red;
+         max-width: 1000px;  
+         margin: 0 auto;
+        }
+        .img-container div{
+            width: 50%;
+        }
+        .img-container{
+            display: flex;
+           
+        }
+        .img-container img{
+            width: 100%;
+        }
+        @media screen and (max-width:576px){
+            .img-container{
+              /* flex-direction: column;   */
+              flex-direction: column-reverse;
+            }
+            .img-container div{
+            width: 100%;
+        }
+        }
+    </style>
+
+
+</head>
+<body>
+    <head>
+        <h1>Responsive Webside</h1>
+        <ol>
+            <li>viewport meta tag</li>
+            <li>Css Relative Unit</li>
+            <li>body max width and horizantal central align</li>
+            <li>img fluid</li>
+            <li>two column  flex and use meadia query with flex direction column</li>
+            <li>multi colum use korle grid template use korbo</li>
+            <li>new responsive need javascript</li>
+        </ol>
+    </head>
+    <main>
+        <div class="img-container">
+            <div><img width="350px" src="vegetable.webp" alt=""></div>
+            <div> <img src="tiger.jpg" alt=""></div>
+        </div>
+        
+    </main>
+</body>
+</html>
